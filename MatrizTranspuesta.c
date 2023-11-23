@@ -19,6 +19,7 @@ int main() {
             A[i][j] = rand() % (100 + 1);
         }
     }
+
     int At[columnas][filas];
 
     for (int i = 0; i < filas; i++) {
@@ -26,4 +27,13 @@ int main() {
             At[j][i] = A[i][j];
         }
     }
+    printf("\nprimera matriz (A):\n");
+    for (int i = 0; i < filas; i++) {
+        for (int j = 0; j < columnas; j++) {
+            printf("%d ", A[i][j]);
+        }
+        printf("\n");
+    }
 }
+
+
