@@ -3,6 +3,7 @@
 #include <time.h>
 
 int main() {
+
     srand(time(NULL));
 
     int filas, columnas;
@@ -15,7 +16,14 @@ int main() {
 
     for (int i = 0; i < filas; i++) {
         for (int j = 0; j < columnas; j++) {
-            A[i][j] = rand() % (100+ 1);
+            A[i][j] = rand() % (100 + 1);
+        }
+    }
+    int At[columnas][filas];
+
+    for (int i = 0; i < filas; i++) {
+        for (int j = 0; j < columnas; j++) {
+            At[j][i] = A[i][j];
         }
     }
 }
